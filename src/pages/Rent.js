@@ -3,7 +3,6 @@ import theme from "../components/UI/Theme"
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import {Grid} from '@mui/material';
-require('dotenv').config()
 
 export default function Rent() {
     return (

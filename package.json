@@ -2,10 +2,11 @@
   "name": "my_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/hackathon_garrett_components",
   "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
+    "fs": "empty",
+    "path": "empty",
+    "os": "empty"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",

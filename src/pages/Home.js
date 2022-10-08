@@ -1,7 +1,7 @@
-import CurrencyBlock from '../components/UI/CurrencyBlock';
+import HomePage from '../components/UI/HomePage';
 
 export default function Home() {
     <div>
-     <CurrencyBlock />
+     <HomePage />
     </div>
 }

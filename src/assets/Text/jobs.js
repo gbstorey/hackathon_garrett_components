@@ -7,14 +7,14 @@ export const jobs = [
 		"location": "16549 E Hotala, Mansouqas"
 	},
 	{
-		"title": "Mowing lawn",
+		"title": "Mowing Lawn",
 		"img": "lawn-mower.jpg",
 		"skills": [ "physical", "aesthetics", "machine" ],
 		"name": "Billy Bob",
 		"location": "16565 E Dikilyub, Firourmuj"
 	},
 	{
-		"title": "Watch children",
+		"title": "Watch Children",
 		"img": "children-playing.jpg",
 		"skills": [ "communication", "parental", "entertainment" ],
 		"name": "Ms. Carol",

@@ -9,20 +9,19 @@ import JobCard from './JobCard';
 
 export default function HomePage(props) {
     return (
-    <>
-    <Card sx={{marginTop: "1px"}}>
-        <Grid container spacing={2} sx={{padding: "20px", margin:"0px 10px"}}>
+    <Box sx={{margin:"0 auto", maxWidth: "70%"}}>
+        <Grid container spacing={2} sx={{padding: "20px 0", margin:"0px 10px"}}>
             <Grid item xs={6}>
                 <Box>
-                    <h2>Current Ecurrency:</h2>
+                    <h2>Vitals:</h2>
                     <Box>
-                    <h2>  <AutoGraphIcon />   1234</h2> 
+                    <h2><AutoGraphIcon />   1234</h2> 
                     </Box>
                 </Box>
             </Grid>
             <Grid item xs={6}>
                 <Box>
-                    <h2>Rating:</h2>
+                    <h2>Rating:</h2>  
                     {[...Array(7)].map((i) =>
                         <StarIcon key={i}/>
                     )}
@@ -32,7 +31,6 @@ export default function HomePage(props) {
                 </Box>
             </Grid>
         </Grid>
-    </Card>
     <Card sx={{padding:"1rem"}}>
     <Grid container spacing={2}>
         {jobs.map(job => 
@@ -47,6 +45,6 @@ export default function HomePage(props) {
         )}
     </Grid>
     </Card>
-    </>
+    </Box>
     )
 }

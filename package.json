@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/hackathon_garrett_components",
-  "browser": {
-    "fs": "empty",
-    "path": "empty",
-    "os": "empty"
-  },
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

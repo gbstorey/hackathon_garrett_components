@@ -34,6 +34,7 @@ const theme = createTheme({
                 fontSize: "1.5rem",
                 fontWeight: 100
               }
+  
     }
 });
 

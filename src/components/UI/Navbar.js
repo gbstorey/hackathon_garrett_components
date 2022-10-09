@@ -12,13 +12,13 @@ import logo from "../../assets/images/logo.png"
 export default function Navbar() {
   return (
     <ThemeProvider theme={theme}>
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1,}}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar sx={{}}>
         <Button href="/">
         <img src={logo} alt="logo"/>
         </Button>
-          <Typography variant="h2" component="div" sx={{ flexGrow: 1, marginLeft:"20px", fontWeight: "500", marginBottom:"5px"}}>
+          <Typography variant="h2" component="div" sx={{ flexGrow: 1, marginLeft:"20px", fontWeight: "500", marginBottom:"5px", fontSize:"2rem"}}>
             Revitalize
           </Typography>
           <Button href="/about" color="inherit">About</Button>

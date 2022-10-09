@@ -9,7 +9,7 @@ import JobCard from './JobCard';
 
 export default function HomePage(props) {
     return (
-    <Box sx={{margin:"0 auto", maxWidth: "70%"}}>
+    <Box sx={{margin:"0 7rem", maxWidth:"70%"}}>
         <Grid container spacing={2} sx={{padding: "20px 0", margin:"0px 10px"}}>
             <Grid item xs={6}>
                 <Box>

@@ -6,12 +6,12 @@ import { Button } from '@mui/material';
 export default function RentalCard(props) {
 
   return (
-    <Card sx={{maxWidth: "25rem"}}>
+    <Card sx={{maxWidth: "25rem", margin: "0"}}>
       <CardHeader
         title={`${props.name}`}
         subheader={`${props.rate}`}
       />
-      <CardMedia sx={{position:"relative", bottom:"10px"}}
+      <CardMedia sx={{bottom:"10px"}}
         component="img"
         height="225px"
         image={`${props.img}`}

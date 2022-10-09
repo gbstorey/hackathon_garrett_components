@@ -18,10 +18,10 @@ export default function Rent() {
             </Typography>
           </Box>
 
-      <Box sx={{textAlign: "center", margin: "0 5rem"}}>
+      <Box sx={{textAlign: "center" , margin: "40px auto", width: "50rem", minWidth: "400px"}}>
           <Grid container spacing={2}>
             {rentals.map(rental => 
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{margin: "0 auto"}}>
               <RentalCard 
               name={rental.name}
               img={rental.img}

@@ -1,38 +1,57 @@
-
-import { useState } from "react";
 import { FormControl,FormLabel,Typography} from "@mui/material"
 import { Card } from "@mui/material"
 import { ThemeProvider } from '@emotion/react';
 import theme from "../components/UI/Theme"
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Box } from "@mui/material";
-import SkillYesNo from "../components/UI/SkillYesNo";
+import {questions} from "../assets/Text/questions.js"
+import {FormControlLabel,RadioGroup,Radio} from "@mui/material"
+import { TextareaAutosize } from "@mui/material";
 
 
-export default function Skills(props) {
-    const [value, setValue] = useState(0);
-    const [isYesNo, setIsYesNo] = useState(false);
+export default function Skills() {
 
     return (
-      <ThemeProvider theme={theme}>
-      <Typography variant="h6">
-      <Box sx={{margin: "40px auto", width: "50rem", minWidth: "400px"}}>
-      <Card sx={{margin: "30px", width: "20rem", padding: "20px", float:"left"}}>
-      <FormControl>
-
-        <FormLabel id="demo-radio-buttons-group-label">
-          {props.questions[value]}
-        </FormLabel>
-
-      {isYesNo === true ? <SkillYesNo /> : <input></input>}
-
-
-
-      </FormControl>
-      <KeyboardArrowRightIcon sx={{position:"relative", top:"90px", left:"230px"}} onClick={()=> setValue(value+1)}/>
-      </Card>
-      </Box>
+      <>
+      <Box sx={{textAlign:"center", margin: "30px auto"}}>
+      <Typography variant="h2">
+        Skills and Goals
       </Typography>
-      </ThemeProvider>
+      <Typography variant="h3"sx={{marginTop: "10px"}} >
+        Pivot to something great.
+      </Typography>
+      
+
+      {questions.map(question => {
+        return <>
+        <ThemeProvider theme={theme}>
+        <Typography variant="h6">
+        <Box sx={{}}>
+        <Card sx={{margin: "30px auto", width: "30rem", padding: "20px"}}>
+        <FormControl>
+
+          <FormLabel id="demo-radio-buttons-group-label">
+            {question.question}
+          </FormLabel>
+
+          {question.answers.length !== 0 ?
+          <RadioGroup
+          aria-labelledby="demo-radio-buttons-group-label"
+          name="radio-buttons-group">
+            <FormControlLabel value="yes" control={<Radio />} label="Yes"  />
+            <FormControlLabel value="no" control={<Radio />} label="No"  />
+          </RadioGroup>
+          : <TextareaAutosize aria-label="maximum height" style={{width:400, margin: "0 auto", height:50}}></TextareaAutosize>}
+
+
+        </FormControl>
+        </Card>
+        </Box>
+
+
+        </Typography>
+        </ThemeProvider>
+      </>})}
+      </Box>
+      </>
     )
   };

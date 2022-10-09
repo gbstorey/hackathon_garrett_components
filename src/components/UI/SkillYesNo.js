@@ -1,14 +1,16 @@
 import {FormControlLabel,RadioGroup,Radio} from "@mui/material"
 
-export default function SkillYesNo() {
+export default function SkillYesNo(props) {
     return (
         <RadioGroup
         aria-labelledby="demo-radio-buttons-group-label"
         defaultValue="yes"
         name="radio-buttons-group"
       >
-        <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-        <FormControlLabel value="no" control={<Radio />} label="No" />
+        {props.answers.map(answer => {
+        return <FormControlLabel value={`${answer.value}`} control={<Radio />} label={`${answer.label}`}  />
+        }
+        )}
       </RadioGroup>
     )
 }

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.36176a1b.js",
+    "static/media/personOne.png": "/static/media/personOne.b7dd403ded3c676bd442.png",
+    "static/media/personOne.jpg": "/static/media/personOne.8881c4eb22bbd25851e4.jpg",
+    "static/media/tech-support.jpg": "/static/media/tech-support.da5ce4f6c4c84446d6a2.jpg",
+    "static/media/community-garden.jpg": "/static/media/community-garden.3b5846b37f0e0bb5c2a4.jpg",
+    "static/media/lawn-mower.jpg": "/static/media/lawn-mower.a0203d0ee15cc55d280a.jpg",
+    "static/media/construction-site.jpg": "/static/media/construction-site.add732303568a37b2d35.jpg",
+    "static/media/warehouse.jpg": "/static/media/warehouse.b6b2dcf6035194fb738b.jpg",
+    "static/media/kitchen.jpg": "/static/media/kitchen.f2ff48e013443c97a7f5.jpg",
+    "static/media/tedious.jpg": "/static/media/tedious.a9b4a7d1940359b32e05.jpg",
+    "static/media/children-playing.jpg": "/static/media/children-playing.04480bb43915cec5f18d.jpg",
+    "static/media/neighborhood-watch.jpg": "/static/media/neighborhood-watch.97e14225a4d58fcc5b32.jpg",
+    "static/media/logo.svg": "/static/media/logo.9926f1ba82371a84357c.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.36176a1b.js.map": "/static/js/main.36176a1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.36176a1b.js"
+  ]
+}

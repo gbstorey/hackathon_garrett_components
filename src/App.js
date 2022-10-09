@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Rent from './pages/Rent';
 import HomePage from './components/UI/HomePage';
+import Contact from './pages/Contact';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/rent' element={<Rent />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   );

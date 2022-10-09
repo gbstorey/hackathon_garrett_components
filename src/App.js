@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route}
 import Rent from './pages/Rent';
 import HomePage from './components/UI/HomePage';
 import Contact from './pages/Contact';
+import Success from "./pages/Success";
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/rent' element={<Rent />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/success' element={<Success />} />
       </Routes>
     </Router>
   );

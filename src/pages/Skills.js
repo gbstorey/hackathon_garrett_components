@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import {questions} from "../assets/Text/questions.js"
 import {FormControlLabel,RadioGroup,Radio} from "@mui/material"
 import { TextareaAutosize } from "@mui/material";
+import {Button} from "@mui/material";
 
 
 export default function Skills() {
@@ -51,6 +52,9 @@ export default function Skills() {
         </Typography>
         </ThemeProvider>
       </>})}
+      <Button href="/success" variant="contained" color="success">
+        Submit
+      </Button>
       </Box>
       </>
     )
